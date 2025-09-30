@@ -1,4 +1,4 @@
-# 🚀 AWS Portfolio Infrastructure — Thomas Le Flohic
+# 🚀 AWS Portfolio — Thomas Le Flohic
 
 Bienvenue dans mon projet **Portfolio AWS / DevOps**.  
 L’objectif est simple : construire un **site portfolio complet**, tout en apprenant étape par étape les services AWS essentiels utilisés en entreprise.  
