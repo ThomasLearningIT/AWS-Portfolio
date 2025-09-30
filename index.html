@@ -1,0 +1,188 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Thomas — Portfolio DevOps / Cloud</title>
+  <meta name="description" content="Portfolio DevOps / Cloud — projets AWS, CI/CD, Docker, Terraform. Thomas — Junior DevOps" />
+  <meta name="theme-color" content="#0f172a" />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Thomas — Portfolio DevOps / Cloud" />
+  <meta property="og:description" content="Projets AWS : S3 + CloudFront, Docker, Terraform, CI/CD." />
+  <meta property="og:type" content="website" />
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="style.css" />
+
+  <!-- JSON-LD (basic) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Thomas",
+    "jobTitle": "DevOps / Cloud Engineer (Junior)",
+    "url": "https://example.com",
+    "sameAs": []
+  }
+  </script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="logo" href="#" aria-label="Accueil">
+        <!-- simple inline svg logo -->
+        <svg width="36" height="36" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+          <rect width="24" height="24" rx="4" fill="#0ea5a4"></rect>
+          <text x="50%" y="58%" text-anchor="middle" fill="#fff" font-size="12" font-family="Arial" dy=".3em">T</text>
+        </svg>
+        <span class="brand">Thomas — DevOps</span>
+      </a>
+
+      <nav class="nav" id="main-nav">
+        <button id="nav-toggle" aria-expanded="false" aria-controls="nav-list">Menu</button>
+        <ul id="nav-list" class="nav-list">
+          <li><a href="#projects">Projets</a></li>
+          <li><a href="#skills">Compétences</a></li>
+          <li><a href="#about">À propos</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero -->
+    <section class="hero">
+      <div class="container hero-inner">
+        <div class="hero-text">
+          <h1>Thomas — DevOps & Cloud</h1>
+          <p class="lead">Je construis des infrastructures reproductibles, sécurisées et automatisées — AWS, Docker, Terraform, CI/CD.</p>
+          <p class="ctas">
+            <a class="btn primary" href="#projects">Voir mes projets</a>
+            <a class="btn ghost" href="assets/cv.pdf" target="_blank" rel="noopener">Télécharger CV</a>
+          </p>
+        </div>
+        <div class="hero-card">
+          <h3>Project 1</h3>
+          <p>S3 + CloudFront — site statique (this portfolio). Private S3 + CloudFront + GitHub Actions.</p>
+          <ul>
+            <li>AWS: S3, CloudFront, ACM</li>
+            <li>CI: GitHub Actions</li>
+            <li>IaC (à venir): Terraform</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects -->
+    <section id="projects" class="section">
+      <div class="container">
+        <h2>Projets</h2>
+        <p class="muted">Projets sélectionnés montrant mes compétences en Cloud et DevOps.</p>
+
+        <div class="grid projects-grid">
+          <!-- Card 1 -->
+          <article class="card">
+            <h3>Project 1 — Static site (S3 + CloudFront)</h3>
+            <p>Hébergement du site statique avec S3 (bucket privé) et distribution via CloudFront. Déploiement automatique via GitHub Actions.</p>
+            <p class="meta">Stack: AWS S3, CloudFront, GitHub Actions</p>
+            <p class="links">
+              <a href="https://github.com/TON-USER/portfolio-site" target="_blank" rel="noopener">Code</a>
+              <!-- put real URL when available -->
+            </p>
+          </article>
+
+          <!-- Card 2 (placeholder) -->
+          <article class="card">
+            <h3>Project 2 — App containerisée</h3>
+            <p>Application Python packagée avec Docker, déployée sur ECS/EKS (en cours).</p>
+            <p class="meta">Stack: Docker, GitHub Actions, AWS</p>
+            <p class="links"><a href="#">Code (à venir)</a></p>
+          </article>
+
+          <!-- Card 3 (placeholder) -->
+          <article class="card">
+            <h3>Project 3 — IaC</h3>
+            <p>Reproduction de l'infrastructure avec Terraform (S3, CloudFront, IAM).</p>
+            <p class="meta">Stack: Terraform, AWS</p>
+            <p class="links"><a href="#">Code (à venir)</a></p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills -->
+    <section id="skills" class="section alt">
+      <div class="container">
+        <h2>Compétences</h2>
+        <div class="skills-grid">
+          <span class="skill">AWS (S3, CloudFront)</span>
+          <span class="skill">Git / GitHub</span>
+          <span class="skill">CI/CD (GitHub Actions)</span>
+          <span class="skill">Docker (bases)</span>
+          <span class="skill">Terraform (bientôt)</span>
+          <span class="skill">Linux / Shell</span>
+          <span class="skill">Monitoring (CloudWatch)</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- About -->
+    <section id="about" class="section">
+      <div class="container">
+        <h2>À propos</h2>
+        <p>Je suis en reconversion vers le Cloud / DevOps. J'apprends par projets concrets : infra-as-code, conteneurs, automatisation et sécurité. Mon objectif : rejoindre une équipe en tant que Junior DevOps / Cloud Engineer.</p>
+
+        <div class="two-col">
+          <div>
+            <h4>Contact rapide</h4>
+            <p>Email: <button class="link-btn" onclick="copyEmail()">thomas.exemple@mail.com</button></p>
+            <p>Localisation: France</p>
+          </div>
+          <div>
+            <h4>Livrables</h4>
+            <ul>
+              <li>Portfolio en ligne</li>
+              <li>Repos GitHub documentés</li>
+              <li>Vidéo démo (courte)</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="section alt">
+      <div class="container">
+        <h2>Contact</h2>
+        <p>Pour un échange technique ou une opportunité, contacte-moi :</p>
+        <form id="contact-form" onsubmit="sendMail(event)">
+          <label>
+            Votre nom
+            <input type="text" name="name" required />
+          </label>
+          <label>
+            Votre message
+            <textarea name="message" rows="4" required></textarea>
+          </label>
+          <div class="form-actions">
+            <button class="btn primary" type="submit">Envoyer (mail)</button>
+            <a class="btn ghost" href="mailto:thomas.exemple@mail.com">Ou mail direct</a>
+          </div>
+          <p class="muted small">Remarque: le formulaire ouvre votre client mail. À mettre derrière une API Lambda+SES plus tard.</p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© <span id="year"></span> Thomas — DevOps Portfolio — <a href="https://github.com/TON-USER" target="_blank" rel="noopener">GitHub</a> • <a href="#" target="_blank" rel="noopener">LinkedIn</a></p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
