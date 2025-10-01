@@ -47,19 +47,6 @@ hébergement, compute, sauvegardes, base de données, CDN, serverless et DNS.
 
 ---
 
-## 📂 Structure du repo
-aws-portfolio-infra/
-├─ project1-s3-static-site/
-├─ project2-ec2-webserver/
-├─ project3-s3-backup/
-├─ project4-rds-flask/
-├─ project5-cloudfront/
-├─ project6-lambda/
-├─ project7-route53/
-└─ README.md <-- ce fichier
-
----
-
 Chaque projet contient :
 - **README spécifique** avec explications + captures.  
 - **Code / configs / scripts** utilisés.  
